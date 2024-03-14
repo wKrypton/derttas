@@ -1,5 +1,8 @@
 while True:
-    x = input("Merhaba Yakup, sorununu açıklar mısın? Seçenekler: aşk, stres, yalnızlık, motivasyon, bunalma: ")
+    isim = input("Merhaba, isminiz nedir?  (çıkmak için 'çıkış yazın') :   ")
+    if isim == "çıkış":
+        break
+    x = input("Merhaba " + isim + ", sorununu açıklar mısın? Seçenekler: aşk, stres, yalnızlık, motivasyon, bunalma (Çıkış için 'çıkış' yazın): ")
     print("Tamamdır.")
 
     if x == "aşk":
